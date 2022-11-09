@@ -26,12 +26,13 @@ fcitx5-material-color
 3.修改环境变量.
 
     修改输入法环境变量，使应用可以调用Fcitx5输入法
-    将下面的内容粘贴到`~/.pam_environment`
+    将下面的内容粘贴到 ~/.xprofile (旧版本是 ~/.pam_environment)
 
 ```
-GTK_IM_MODULE DEFAULT=fcitx
-QT_IM_MODULE  DEFAULT=fcitx
-XMODIFIERS    DEFAULT=@im=fcitx
+export INPUT_METHOD=fcitx5
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
 ```
 
 4.配置主题.
